@@ -1,0 +1,133 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jef Sewing</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/styles.css">
+
+</head>
+
+<body>
+
+	<header>
+		<h2><a href="#">Jeftah Sewing</a></h2>
+		
+		<nav>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">Products</a></li>
+			<li><a href="#">About</a></li>
+			<li><a href="#">Contacts</a></li>
+		</nav>
+	</header>
+
+
+	<section class="hero">
+		<div class="background-image" style="background-image: url(/img/sew.jpg);"></div>
+		<h1>Jeftah Sewing Store</h1>
+		<h3>A quick tailor for all fashion wear.</h3>
+		<a href="" class="btn">View Designs</a>
+	</section>
+
+
+	<section class="our-work">
+		<h3 class="title">Some of our work</h3>
+			<p>we are pashinate about make you apear like the best ever in your dress more than ever.</p>
+		<hr>
+    
+       <div class="row text-center" style="display:flex; flex-wrap: wrap;">
+          <% products.forEach(function(product){ %>
+            <div class="col-md-3 col-sm-6">
+                <div class="thumbnail">
+					     <div>           		  
+					      <h2><%= product.productname %></h2>
+					    </div>
+					    <div>
+					      <img src ="<%= product.image %>" />
+					    </div>
+					    <div>
+					      <p><%= product.description %></p>
+					    </div>
+					      
+					     <p>
+					          <a href="/products/<%= product._id %>" class="btn btn-primary">More Info</a>
+					      </p>
+                   </p>
+                </div>
+            </div>
+        <% }); %>
+    </div>
+
+	</section>
+	  
+<!-- describe what you do specifically sewing kente, siut, weeding wear, kids wear jeans, ets -->
+	<section class="features">
+		<h3 class="title">What We Do</h3>
+		<p>we are pashinate about make you apear like the best ever in your dress more than ever.</p>
+		<hr>
+
+		<ul class="grid">
+			<li>
+				<i class="fa fa-camera-retro"></i>
+				<h4>SUIT</h4>
+				<p>Just like Jesus’ early followers, we meet together to learn and to be encouraged. (1 Cor. 14:31) Even experienced servants
+					of God need encouragement. Consider Joshua. He had served God faithfully for many years. Yet, Jehovah told Moses to encourage
+					him, saying: “Commission Joshua and encourage him and strengthen him, because he is the one who will cross over before this
+					people and he is the one who will cause them to inherit the
+				</p>
+			</li>
+			<li>
+				<i class="fa fa-cubes"></i>
+				<h4>Wedding wear</h4>
+					<p>Just like Jesus’ early followers, we meet together to learn and to be encouraged. (1 Cor. 14:31) Even experienced servants
+						of God need encouragement. Consider Joshua. He had served God faithfully for many years. Yet, Jehovah told Moses to encourage
+						him, saying: “Commission Joshua and encourage him and strengthen him, because he is the one who will cross over before this
+						people and he is the one who will cause them to inherit the
+					</p>
+			</li>
+			<li>
+				<i class="fa fa-newspaper-o"></i>
+				<h4>kiddy wear</h4>
+					<p>Just like Jesus’ early followers, we meet together to learn and to be encouraged. (1 Cor. 14:31) Even experienced servants
+						of God need encouragement. Consider Joshua. He had served God faithfully for many years. Yet, Jehovah told Moses to encourage
+						him, saying: “Commission Joshua and encourage him and strengthen him, because he is the one who will cross over before this
+						people and he is the one who will cause them to inherit the
+					</p>
+			</li>
+		</div>
+		<li><a href="/products/new">Add New Product</a></li>
+	</section>
+
+	<section class="contact">
+		<h3 class="title">Make an Order</h3>	
+		<p>church members of their stand on false religion. The whole world needed to see Babylon the Great for what it is—a religious prostitute! Accordingly, between December 1917 and early 1918, the few thousand Bible Students zealously distributed 10,000,000 copies of a tract featuring the subject “The Fall of Babylon”—a hard-hitting indictment of Christendom. As you can imagine, the clergy were furious; but undeterred, the Bible Students kept right on with this important work. They were determined to obey “God as ruler rather than 
+</p>
+		<hr>
+
+	<form name="" action="">
+			<input type="email" name ="" action ="" placeholder="Email">
+			<a href="#" class="btn">Order now</a>
+		</form>
+	</section>
+
+	<footer>
+		<ul>
+			<li><a href="#"><i class="fa fa-twitter-square"></i></a></li>
+			<li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
+			<li><a href="#"><i class="fa fa-snapchat-square"></i></a></li>
+			<li><a href="#"><i class="fa fa-pinterest-square"></i></a></li>
+			<li><a href="#"><i class="fa fa-github-square"></i></a></li>
+		</ul>
+		<p>Made by <a href="" target="_blank">Alfred Boateng</a>.  images courtesy to <a href="http://unsplash.com/" target="_blank">unsplash</a>.</p>
+		<p>Alfred in Production</p>
+	</footer>
+
+</body>
+
+</html>
