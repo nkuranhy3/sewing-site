@@ -11,7 +11,7 @@ var routes = require("./models/routes");
 mongoose.connect("mongodb://localhost/sewing");
 app.use(bodyParser.urlencoded({ extended: true }));
 app.set("view engine", "ejs");
-app.use(express.static(__dirname + "/public"));
+app.use(express.static(__dirname + "/assets"));
 app.use(methodOverride("_method"));
 
 app.use(routes);
